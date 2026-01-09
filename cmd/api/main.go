@@ -5,9 +5,15 @@ import (
 	"net/http"
 
 	"api-go/internal"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	
+	godotenv.Load()
+	internal.ConnectDB()
+	
 	router := internal.NewRouter()
 
 	log.Println("Server started on :8080")
