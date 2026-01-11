@@ -34,12 +34,12 @@ func CreateUserHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(result))
 }
 
-// func UpdateUserHandler(w http.ResponseWriter, r *http.Request) {
-// 	result:= UpdateUser(r)
-// 	w.Write([]byte(result))
-// }
+func UpdateUserHandler(w http.ResponseWriter, r *http.Request) {
+	result:= UpdateUser(r)
+	w.Write([]byte(result))
+}
 
-// func DeleteUserHandler(w http.ResponseWriter, r *http.Request) {
-// 	result:= DeleteUser(r)
-// 	w.Write([]byte(result))
-// }
+func DeleteUserHandler(w http.ResponseWriter, r *http.Request) {
+	result:= DeleteUser(r)
+	w.Write([]byte(result))
+}

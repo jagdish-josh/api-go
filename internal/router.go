@@ -13,9 +13,10 @@ func NewRouter() *http.ServeMux {
 
 	mux.HandleFunc("/user/create", CreateUserHandler)
 
-	// mux.HandleFunc("user/update", UpdateUserHandler)
+	mux.HandleFunc("/user/update", UpdateUserHandler)
 
-	// mux.HandleFunc("user/delete", DeleteUserHandler)
+	mux.HandleFunc("/user/delete", DeleteUserHandler)
+	
 	mux.HandleFunc("/", HomepageHandler)
 
 
